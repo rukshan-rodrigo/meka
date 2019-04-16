@@ -12,6 +12,7 @@
 
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
+    <link rel="icon" href=favicon.png>
     <!-- Place favicon.ico in the root directory -->
 
     <meta name="theme-color" content="#f0efee">
@@ -30,28 +31,21 @@
         }
 
         p {
-            margin: 0 0 10px 0;
+            margin: 0 0 15px 0;
             padding: 0;
             font-size: 18px;
-            line-height: 1.6;
-            font-family:  quasimoda,  aria, sans-serif;
-            font-weight: 300;
-            font-style: normal;
-        }
-
-        h1, h2 {
-            font-family:  quasimoda,  aria, sans-serif;
+            font-family: quasimoda, Arial, Helvetica, sans-serif;
             font-weight: 300;
             font-style: normal;
         }
 
         ::-moz-selection {
-            background: #b3d4fc;
+            background: #f0efee;
             text-shadow: none;
         }
 
         ::selection {
-            background: #b3d4fc;
+            background: #f0efee;
             text-shadow: none;
         }
 
@@ -70,15 +64,17 @@
         .r-container img {
             max-width: 100%;
             height: auto;
+            margin: 25px 0;
         }
 
         @media (min-width: 900px) {
             p {
                 font-size: 22px;
+                margin: 0 0 30px 0;
             }
 
             .wrap {
-                margin: 80px auto;
+                margin: 0 auto;
                 flex-direction: row;
             }
 
@@ -94,9 +90,12 @@
 
         }
 
-
-
-
+        @media (min-width: 1200px) {
+            .wrap {
+                width: 1000px;
+                height: 100vh;
+            }
+        }
 
         /* ==========================================================================
        Browser Upgrade Prompt
@@ -119,22 +118,20 @@
 <![endif]-->
 <div class="wrap">
     <div class="l-container">
-        <h1>Coming soon</h1>
-        <h2>Stay tuned</h2>
-<!--        <p>There is an opportunity to rid the internet of evil, once and for all.</p>-->
+        <p>There is an opportunity to rid the internet of evil, once and for all.</p>
 
-<!--        <p>Are you interested?</p>-->
+        <p>Are you interested?</p>
 
-<!--        <p>m.e.ka is the world's first Ai-powered online protection.</p>-->
+        <p>m.e.ka is the world's first Ai-powered online protection.</p>
 
-<!--        <p>Empowered by propriety Machine Empathy technology, m.e.ka learns from you to understand when you feel-->
-<!--            safe.</p>-->
+        <p>Empowered by propriety Machine Empathy technology, m.e.ka learns from you to understand when you feel safe.</p>
 
-<!--        <p>If you don't, m.e.ka notices even the smallest sign of distress and checks-in to see if everything's ok.</p>-->
+        <p>If you don't, m.e.ka notices even the smallest sign of distress and checks-in to see if everything's ok.</p>
 
-<!--        <p>Say goodbye to cyber bullies, stalkers and predators.</p>-->
+        <p>Say goodbye to cyber bullies, stalkers and predators.</p>
 
-<!--        <p>With m.e.ka, it's a wonderful world.</p>-->
+        <p>With m.e.ka, it's a wonderful world.</p>
+
 <!--        <p>Enter your email for news and updates</p>-->
     </div>
     <div class="r-container">
