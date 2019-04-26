@@ -95,7 +95,7 @@
 
         #mc_embed_signup{
             clear:left;
-            font-size: 20px;
+            font-size: 18px;
             font-family: quasimoda, Arial, Helvetica, sans-serif;
             font-weight: 300;
             font-style: normal;
@@ -149,10 +149,10 @@
             width: 50%;
             height: auto;
         }
+
         @media (min-width: 900px) {
             p {
-                font-size: 20px;
-                margin: 0 0 30px 0;
+                margin: 0 0 20px 0;
             }
 
             .wrap {
@@ -184,8 +184,7 @@
             }
 
             input[type="email"] {
-                width: 400px;
-                font-size: 20px;
+                width: 90%;
             }
 
             input[type="submit"] {
@@ -204,6 +203,10 @@
                 background: #fcdfeb;
             }
 
+            #screen-5 {
+                background: #d8eddd;
+            }
+
         }
 
         @media (max-width: 900px) {
@@ -220,6 +223,20 @@
                 margin-bottom: 50px;
                 width: 40%;
                 height: auto;
+            }
+
+            #screen-4 h1 {
+                margin-top: 50px;
+            }
+
+            #screen-5 .l-container {
+                width: 100%;
+                text-align: center;
+            }
+
+            .hello svg {
+                width: 60px;
+                height: 22px;
             }
         }
 
@@ -273,7 +290,23 @@
 
 <div id="screen-1" class="wrap">
     <div class="eyes"><img src="img/merlin_meka_eyes.svg" width="729px" height="59px" alt="eyes" class="responsive-images"></div><br>
-    <div class="hello"><img src="img/hello.svg" width="87px" height="32px" alt="hello"></div>
+    <div class="hello">
+        <svg width="87px" height="32px" viewBox="0 0 87 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="hello" fill="#231F20" fill-rule="nonzero">
+                    <polygon id="Shape"
+                             points="2.35 0.34 5.67 0.58 4.79 13.01 20.46 14.13 21.34 1.7 24.66 1.94 22.65 30.25 19.33 30 20.24 17.17 4.57 16.05 3.66 28.89 0.34 28.65"></polygon>
+                    <path d="M31.37,22.13 L31.37,22.29 C31.31,26.14 33.87,28.51 37.24,28.56 C39.57,28.6 41.23,27.58 42.75,25.32 L43.07,25.25 L45.25,26.77 C43.39,29.79 40.56,31.38 37.07,31.32 C31.66,31.23 28.04,27.24 28.13,21.55 C28.23,15.7 31.98,11.91 37.19,12 C42.32,12.09 45.67,15.63 45.57,21.68 C45.57,21.92 45.56,22.04 45.52,22.36 L31.37,22.13 Z M31.53,19.64 L42.35,19.82 C42.2,16.69 40.19,14.77 37.14,14.72 C34.22,14.68 32.07,16.49 31.53,19.64 Z"
+                          id="Shape"></path>
+                    <polygon id="Shape" points="50.09 1.18 53.13 1.13 53.63 30.51 50.59 30.56"></polygon>
+                    <polygon id="Shape" points="58.83 0.96 61.87 0.83 63.16 30.18 60.12 30.31"></polygon>
+                    <path d="M67.49,21.17 C67.07,15.73 70.9,11.21 76.45,10.78 C82.01,10.35 86.49,14.22 86.91,19.66 C87.33,25.05 83.46,29.62 77.95,30.05 C72.44,30.47 67.91,26.56 67.49,21.17 Z M83.72,19.9 C83.42,16.1 80.39,13.32 76.68,13.61 C72.96,13.9 70.4,17.11 70.7,20.91 C71,24.71 74.07,27.48 77.74,27.2 C81.41,26.92 84.01,23.7 83.72,19.9 Z"
+                          id="Shape"></path>
+                </g>
+            </g>
+        </svg>
+    </div>
     <div class="link-chevron"><a href="#screen-2"><img src="img/chevron.svg" alt="next page" width="27px" height="8px"></a>
     </div>
 </div>
