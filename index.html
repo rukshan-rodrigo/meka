@@ -21,7 +21,7 @@
 
     <style>
         html {
-            line-height: 1.15; /* 1 */
+            line-height: 1.3; /* 1 */
             font-size: 22px;
             -webkit-text-size-adjust: 100%; /* 2 */
         }
@@ -42,7 +42,7 @@
 
         h1 {
             font-weight: bold;
-            font-size: 22px;
+            font-size: 23px;
         }
 
         ::-moz-selection {
@@ -61,7 +61,7 @@
             margin: 0 auto;
             display: flex;
             align-items: center;
-            flex-direction: column-reverse;
+            flex-direction: column;
         }
 
         #screen-1 {
@@ -89,7 +89,7 @@
 
         @media (min-width: 900px) {
             p {
-                font-size: 22px;
+                font-size: 20px;
                 margin: 0 0 30px 0;
             }
 
@@ -161,7 +161,7 @@
             padding: 0 10px 5px;
             background: transparent;
             color: #000;
-            margin-top: 5px;
+            margin-top: 10px;
             margin-bottom: 50px;
         }
 
@@ -189,10 +189,28 @@
             left: calc(45% + 13px);
         }
 
+        #screen-1 .link-chevron {
+            left: auto;
+        }
+
+        .empower {
+            width: 50%;
+            height: auto;
+        }
 
         @media (max-width: 900px) {
             .responsive-images {
                 width: 100%;
+                height: auto;
+            }
+
+            .hide-mobile {
+                display: none;
+            }
+
+            .empower {
+                margin-bottom: 50px;
+                width: 40%;
                 height: auto;
             }
         }
@@ -287,9 +305,9 @@
         <p>Oh the places you'll go!</p>
     </div>
     <div class="r-container">
-        <img src="img/iphone@2x.png" width="300px" height="605px" alt="mobile image">
+        <img src="img/iphone@2x.png" width="300px" height="605px" alt="mobile image" class="hide-mobile">
     </div>
-    <div class="link-chevron"><a href="#screen-4"><img src="img/chevron.svg" alt="next page" width="27px" height="8px"></a></div>
+    <div class="link-chevron"><a href="#screen-4"><img src="img/chevron.svg" alt="next page" width="27px" height="8px" class="hide-mobile"></a></div>
 
 </div>
 
@@ -307,9 +325,9 @@
 
     </div>
     <div class="r-container">
-        <img src="img/iphone@2x.png" width="300px" height="605px" alt="mobile image">
+        <img src="img/iphone@2x.png" width="300px" height="605px" alt="mobile image" class="hide-mobile">
     </div>
-    <div class="link-chevron"><a href="#screen-5"><img src="img/chevron.svg" alt="next page" width="27px" height="8px"></a></div>
+    <div class="link-chevron"><a href="#screen-5"><img src="img/chevron.svg" alt="next page" width="27px" height="8px" class="hide-mobile"></a></div>
 </div>
 
 <div id="screen-5" class="wrap">
@@ -327,11 +345,11 @@
         </div>
         <!--End mc_embed_signup-->
 
-        <img src="img/empowered.png" width="396px" height="108px" alt="empowered logo" class="responsive-images">
+        <img src="img/empowered.png" width="396px" height="108px" alt="empowered logo" class="responsive-images empower">
 
     </div>
     <div class="r-container">
-        <img src="img/iphone@2x.png" width="300px" height="605px" alt="mobile image">
+        <img src="img/iphone@2x.png" width="300px" height="605px" alt="mobile image" class="hide-mobile">
     </div>
 
 </div>
