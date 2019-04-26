@@ -57,7 +57,7 @@
 
         .wrap {
             position: relative;
-            width: 90%;
+            padding: 0 10%;
             margin: 0 auto;
             display: flex;
             align-items: center;
@@ -87,6 +87,68 @@
             margin: 25px 0;
         }
 
+        @media (min-width: 1200px) {
+            .wrap {
+                padding: 0 20%;
+            }
+        }
+
+        #mc_embed_signup{
+            clear:left;
+            font-size: 20px;
+            font-family: quasimoda, Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        input[type="email"] {
+            background: transparent;
+            outline: none;
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1px solid #000;
+            font-size: 18px;
+            padding: 10px 0;
+            font-family: quasimoda, Arial, Helvetica, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            font-family: quasimoda, Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            border: 1px solid #000;
+            border-radius: 5px;
+            padding: 0 10px 5px;
+            background: transparent;
+            color: #000;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+
+        input[type="submit"]:hover,
+        input[type="submit"]:focus {
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .link-chevron {
+            position: absolute;
+            bottom: 25px;
+            left: calc(45% + 13px);
+        }
+
+        #screen-1 .link-chevron {
+            left: auto;
+        }
+
+        .empower {
+            width: 50%;
+            height: auto;
+        }
         @media (min-width: 900px) {
             p {
                 font-size: 20px;
@@ -121,58 +183,6 @@
                 text-align: left;
             }
 
-        }
-
-        @media (min-width: 1200px) {
-            .wrap {
-                width: 1000px;
-            }
-        }
-
-        #mc_embed_signup{
-            clear:left;
-            font-size: 20px;
-            font-family: quasimoda, Arial, Helvetica, sans-serif;
-            font-weight: 300;
-            font-style: normal;
-        }
-
-        input[type="email"] {
-            background: transparent;
-            outline: none;
-            border: 0;
-            border-radius: 0;
-            border-bottom: 1px solid #000;
-            font-size: 18px;
-            padding: 10px 0;
-            font-family: quasimoda, Arial, Helvetica, sans-serif;
-            font-weight: 300;
-            font-style: normal;
-            width: 100%;
-        }
-
-        input[type="submit"] {
-            font-family: quasimoda, Arial, Helvetica, sans-serif;
-            font-size: 18px;
-            font-weight: 100;
-            font-style: normal;
-            border: 1px solid #000;
-            border-radius: 5px;
-            padding: 0 10px 5px;
-            background: transparent;
-            color: #000;
-            margin-top: 10px;
-            margin-bottom: 50px;
-        }
-
-        input[type="submit"]:hover,
-        input[type="submit"]:focus {
-            background: #000;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        @media (min-width: 900px) {
             input[type="email"] {
                 width: 400px;
                 font-size: 20px;
@@ -181,21 +191,19 @@
             input[type="submit"] {
                 margin-bottom: 0;
             }
-        }
 
-        .link-chevron {
-            position: absolute;
-            bottom: 25px;
-            left: calc(45% + 13px);
-        }
+            #screen-2 {
+                background: #d7f0fc;
+            }
 
-        #screen-1 .link-chevron {
-            left: auto;
-        }
+            #screen-3 {
+                background: #fffac2;
+            }
 
-        .empower {
-            width: 50%;
-            height: auto;
+            #screen-4 {
+                background: #fcdfeb;
+            }
+
         }
 
         @media (max-width: 900px) {
@@ -286,6 +294,17 @@
 
         <p>With m.e.ka, it's a wonderful world.</p>
 
+        <div id="mc_embed_signup" class="hide-mobile">
+            <form action="https://deloitte.us20.list-manage.com/subscribe/post?u=23e8a69426479c6034b5ce662&amp;id=45b6743e64" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email for news and updates" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_23e8a69426479c6034b5ce662_45b6743e64" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+        </div>
+
     </div>
     <div class="r-container">
         <img src="img/iphone@2x.png" width="300px" height="605px" alt="mobile image">
@@ -303,6 +322,17 @@
         <p>With m.e.ka, the internet is an adventure without the danger.</p>
 
         <p>Oh the places you'll go!</p>
+
+        <div id="mc_embed_signup" class="hide-mobile">
+            <form action="https://deloitte.us20.list-manage.com/subscribe/post?u=23e8a69426479c6034b5ce662&amp;id=45b6743e64" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email for news and updates" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_23e8a69426479c6034b5ce662_45b6743e64" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+        </div>
     </div>
     <div class="r-container">
         <img src="img/iphone@2x.png" width="300px" height="605px" alt="mobile image" class="hide-mobile">
@@ -323,16 +353,6 @@
 
         <p>You see, you're the me in m.e.ka</p>
 
-    </div>
-    <div class="r-container">
-        <img src="img/iphone@2x.png" width="300px" height="605px" alt="mobile image" class="hide-mobile">
-    </div>
-    <div class="link-chevron"><a href="#screen-5"><img src="img/chevron.svg" alt="next page" width="27px" height="8px" class="hide-mobile"></a></div>
-</div>
-
-<div id="screen-5" class="wrap">
-    <div class="l-container">
-
         <div id="mc_embed_signup">
             <form action="https://deloitte.us20.list-manage.com/subscribe/post?u=23e8a69426479c6034b5ce662&amp;id=45b6743e64" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
@@ -343,7 +363,16 @@
                 </div>
             </form>
         </div>
-        <!--End mc_embed_signup-->
+
+    </div>
+    <div class="r-container">
+        <img src="img/iphone@2x.png" width="300px" height="605px" alt="mobile image" class="hide-mobile">
+    </div>
+    <div class="link-chevron"><a href="#screen-5"><img src="img/chevron.svg" alt="next page" width="27px" height="8px" class="hide-mobile"></a></div>
+</div>
+
+<div id="screen-5" class="wrap">
+    <div class="l-container">
 
         <img src="img/empowered.png" width="396px" height="108px" alt="empowered logo" class="responsive-images empower">
 
