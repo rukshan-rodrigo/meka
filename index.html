@@ -12,11 +12,12 @@
 
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
-    <link rel="icon" href=favicon.png>
+    <link rel="icon" href="favicon.ico">
     <!-- Place favicon.ico in the root directory -->
 
     <meta name="theme-color" content="#f0efee">
     <link rel="stylesheet" href="https://use.typekit.net/zva5tgb.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <style>
         html {
@@ -39,6 +40,11 @@
             font-size: 18px;
         }
 
+        h1 {
+            font-weight: bold;
+            font-size: 22px;
+        }
+
         ::-moz-selection {
             background: #f0efee;
             text-shadow: none;
@@ -50,11 +56,25 @@
         }
 
         .wrap {
+            position: relative;
             width: 90%;
             margin: 0 auto;
             display: flex;
             align-items: center;
             flex-direction: column-reverse;
+        }
+
+        #screen-1 {
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .eyes {
+            margin-top: 30vh;
+        }
+
+        .hello {
+            margin-top: 10%;
         }
 
         .r-container {
@@ -76,6 +96,19 @@
             .wrap {
                 margin: 0 auto;
                 flex-direction: row;
+                height: 100vh;
+            }
+
+            .eyes, .hello {
+                margin: 0 auto;
+            }
+
+            .eyes {
+                margin-top: 20%;
+            }
+
+            .hello {
+                margin-top: 10%;
             }
 
             .l-container {
@@ -93,7 +126,6 @@
         @media (min-width: 1200px) {
             .wrap {
                 width: 1000px;
-                height: 100vh;
             }
         }
 
@@ -107,7 +139,9 @@
 
         input[type="email"] {
             background: transparent;
+            outline: none;
             border: 0;
+            border-radius: 0;
             border-bottom: 1px solid #000;
             font-size: 18px;
             padding: 10px 0;
@@ -140,7 +174,7 @@
 
         @media (min-width: 900px) {
             input[type="email"] {
-                width: 60%;
+                width: 400px;
                 font-size: 20px;
             }
 
@@ -148,6 +182,21 @@
                 margin-bottom: 0;
             }
         }
+
+        .link-chevron {
+            position: absolute;
+            bottom: 25px;
+            left: calc(45% + 13px);
+        }
+
+
+        @media (max-width: 900px) {
+            .responsive-images {
+                width: 100%;
+                height: auto;
+            }
+        }
+
 
         /* ==========================================================================
        Browser Upgrade Prompt
@@ -161,6 +210,33 @@
 
     </style>
 
+    <script>
+      $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $(".link-chevron a").on('click', function(event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+      });
+    </script>
+
 </head>
 
 <body>
@@ -168,7 +244,15 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience and security.</p>
 <![endif]-->
-<div class="wrap">
+
+<div id="screen-1" class="wrap">
+    <div class="eyes"><img src="img/merlin_meka_eyes.svg" width="729px" height="59px" alt="eyes" class="responsive-images"></div><br>
+    <div class="hello"><img src="img/hello.svg" width="87px" height="32px" alt="hello"></div>
+    <div class="link-chevron"><a href="#screen-2"><img src="img/chevron.svg" alt="next page" width="27px" height="8px"></a>
+    </div>
+</div>
+
+<div id="screen-2" class="wrap">
     <div class="l-container">
         <p>There is an opportunity to rid the internet of evil, once and for all.</p>
 
@@ -184,6 +268,53 @@
 
         <p>With m.e.ka, it's a wonderful world.</p>
 
+    </div>
+    <div class="r-container">
+        <img src="img/iphone@2x.png" width="300px" height="605px" alt="mobile image">
+    </div>
+    <div class="link-chevron"><a href="#screen-3"><img src="img/chevron.svg" alt="next page" width="27px" height="8px"></a></div>
+</div>
+
+<div id="screen-3" class="wrap">
+    <div class="l-container">
+        <h1>What is m.e.ka?</h1>
+        <p>m.e.ka is a digital buddy that lets you explore the online world in safety.</p>
+
+        <p>When you're feeling unsure, worried or don't seem to be yourself m.e.ka notices and checks in with you to make sure everything is ok.</p>
+
+        <p>With m.e.ka, the internet is an adventure without the danger.</p>
+
+        <p>Oh the places you'll go!</p>
+    </div>
+    <div class="r-container">
+        <img src="img/iphone@2x.png" width="300px" height="605px" alt="mobile image">
+    </div>
+    <div class="link-chevron"><a href="#screen-4"><img src="img/chevron.svg" alt="next page" width="27px" height="8px"></a></div>
+
+</div>
+
+<div id="screen-4" class="wrap">
+    <div class="l-container">
+        <h1>How m.e.ka works?</h1>
+
+        <p>You'll notice m.e.ka is a lot like you.</p>
+
+        <p>Empowered by its Machine Empathy engine, m.e.ka is your digital friend that is happy when you're happy, and knows when you're not.</p>
+
+        <p>m.e.ka is perfectly in tune with you.</p>
+
+        <p>You see, you're the me in m.e.ka</p>
+
+    </div>
+    <div class="r-container">
+        <img src="img/iphone@2x.png" width="300px" height="605px" alt="mobile image">
+    </div>
+    <div class="link-chevron"><a href="#screen-5"><img src="img/chevron.svg" alt="next page" width="27px" height="8px"></a></div>
+</div>
+
+<div id="screen-5" class="wrap">
+    <div class="l-container">
+
         <div id="mc_embed_signup">
             <form action="https://deloitte.us20.list-manage.com/subscribe/post?u=23e8a69426479c6034b5ce662&amp;id=45b6743e64" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div id="mc_embed_signup_scroll">
@@ -196,10 +327,11 @@
         </div>
         <!--End mc_embed_signup-->
 
-<!--        <p>Enter your email for news and updates</p>-->
+        <img src="img/empowered.png" width="396px" height="108px" alt="empowered logo" class="responsive-images">
+
     </div>
     <div class="r-container">
-        <img src="mobile@2x.png" width="300" height="600" alt="mobile image">
+        <img src="img/iphone@2x.png" width="300px" height="605px" alt="mobile image">
     </div>
 
 </div>
