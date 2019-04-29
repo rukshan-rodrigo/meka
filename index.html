@@ -240,6 +240,38 @@
             }
         }
 
+        /* make keyframes that tell the start state and the end state of our object */
+        @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+        @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+        @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+        .fade-in {
+            opacity:0;  /* make things invisible upon start */
+            -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+            -moz-animation:fadeIn ease-in 1;
+            animation:fadeIn ease-in 1;
+
+            -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+            -moz-animation-fill-mode:forwards;
+            animation-fill-mode:forwards;
+
+            -webkit-animation-duration:2s;
+            -moz-animation-duration:2s;
+            animation-duration:2s;
+
+            -webkit-animation-delay: 1s;
+            -moz-animation-delay: 1s;
+            animation-delay: 1s;
+        }
+
+        .show_delay {
+            display: none;
+        }
+
+        .show_delay.merlin_meka_eyes_active {
+            display: block;
+        }
+
 
         /* ==========================================================================
        Browser Upgrade Prompt
@@ -277,6 +309,11 @@
             });
           } // End if
         });
+
+        var header = $('#merlin_meka_eyes');
+        setInterval(function(){
+          header.toggleClass('merlin_meka_eyes_active');
+        }, 4000);
       });
     </script>
 
@@ -289,8 +326,23 @@
 <![endif]-->
 
 <div id="screen-1" class="wrap">
-    <div class="eyes"><img src="img/merlin_meka_eyes.svg" width="729px" height="59px" alt="eyes" class="responsive-images"></div><br>
-    <div class="hello">
+    <div class="eyes">
+        <svg width="729px" height="60px" viewBox="0 0 729 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g id="Group">
+                    <g id="merlin_meka_eyes" class="show_delay" fill="#231F20">
+                        <path d="M0.11,29.51 C0.11,12.91 12.28,0.73 26.67,0.73 C42.17,0.73 54.34,12.91 54.34,29.51 C54.34,47.23 42.17,58.29 26.67,58.29 C12.28,58.29 0.11,47.23 0.11,29.51 Z" id="Shape"></path>
+                        <path d="M674.2,29.51 C674.2,12.91 686.38,0.73 700.77,0.73 C716.27,0.73 728.44,12.91 728.44,29.51 C728.44,47.23 716.26,58.29 700.77,58.29 C686.38,58.29 674.2,47.23 674.2,29.51 Z" id="Shape"></path>
+                    </g>
+                    <g id="merlin_meka_eyes_closed" transform="translate(0.000000, 30.000000)" fill="#221F1F">
+                        <path d="M0.11,0.51 C2.56,13.26 8.76,27.06 27.23,27.06 C43.86,27.06 51.39,16.73 54.35,0.51 C54.35,18.23 42.18,29.29 26.68,29.29 C12.28,29.29 0.11,18.23 0.11,0.51 Z" id="Shape"></path>
+                        <path d="M674.2,0.51 C676.65,13.26 682.85,27.06 701.32,27.06 C717.95,27.06 725.48,16.73 728.44,0.51 C728.44,18.23 716.27,29.29 700.77,29.29 C686.38,29.29 674.2,18.23 674.2,0.51 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </div>
+    <div class="hello fade-in">
         <svg width="87px" height="32px" viewBox="0 0 87 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink">
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
