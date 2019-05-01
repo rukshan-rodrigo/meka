@@ -47,8 +47,69 @@ h1 {
     flex-direction: column;
 }
 
+.eye {
+    z-index: 1;
+    width: 55px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50px;
+    position: absolute;
+    margin-top: 60px;
+    top: 0;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+}
+
+.right {
+    position: absolute;
+    right: 55px;
+}
+
+.eyelid {
+    margin-top: 0;
+    z-index: 2;
+    background-color: #f0efee;
+    animation-name: blink;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+    top: 0;
+}
+
+.eyelid.left {
+    left: 0;
+    margin-left: 50px;
+}
+
+.eyelid.right {
+    right: 0;
+    margin-right: 50px;
+}
+
+@keyframes blink {
+    0% {
+        transform: translate(0, 30px);
+    }
+    2% {
+        transform: translate(0, 45px);
+    }
+    7% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
 .eyes {
-    margin-top: 30vh;
+    margin-top: 20vh;
+    width: 90%;
+    height: 120px;
+    position: relative;
 }
 
 .hello {
@@ -144,7 +205,8 @@ input[type="submit"]:focus {
     }
 
     .eyes {
-        margin-top: 20%;
+        margin-top: 15%;
+        width: 730px;
     }
 
     .hello {
