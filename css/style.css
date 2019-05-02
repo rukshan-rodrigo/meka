@@ -208,7 +208,7 @@ input[type="submit"]:focus {
     .wrap {
         margin: 0 auto;
         flex-direction: row;
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .eyes, .hello {
