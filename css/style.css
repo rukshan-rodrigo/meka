@@ -49,6 +49,8 @@ h1 {
 
 #phone {
     z-index: 99;
+    opacity: 0;
+    right: -200px;
 }
 
 #phone-anchor {
