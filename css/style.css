@@ -47,11 +47,20 @@ h1 {
     flex-direction: column;
 }
 
+#phone {
+    z-index: 99;
+}
+
+#phone-anchor {
+    position: absolute;
+    top: 50vh;
+}
+
 .eye {
     z-index: 1;
     width: 55px;
     height: 60px;
-    background-color: black;
+    background-color: #262223;
     border-radius: 50px;
     position: absolute;
     margin-top: 60px;
