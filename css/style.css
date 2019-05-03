@@ -88,7 +88,7 @@ h1 {
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     position: absolute;
-    top: 0;
+    top: 55px;
 }
 
 .eyelid.left {
@@ -99,21 +99,6 @@ h1 {
 .eyelid.right {
     right: 0;
     margin-right: 50px;
-}
-
-@keyframes blink {
-    0% {
-        transform: translate(0, 35px);
-    }
-    2% {
-        transform: translate(0, 55px);
-    }
-    7% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
 }
 
 .eyes {
