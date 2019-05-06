@@ -1,8 +1,8 @@
 const controller = new ScrollMagic.Controller();
 
-// 
+//
 // EYES ANIMATION
-// 
+//
 const eyes = [$('.left .eyelid'), $('.right .eyelid')];
 
 // Initial animation: Start eyes closed, slow open
@@ -25,21 +25,45 @@ timeline.from(eyes, 0.1, { top: "0" });
 timeline.to  (eyes, 0.1, { top: "55px" });
 timeline.to  (eyes, 0.1, { top: "0" });
 
-// 
-// CARD ANIMATION (TEXT AND PHONE)
-// 
+//
+// TEXT ANIMATION
+//
+const $numberOfScreens = $('.screen');
+
+for (let i = 0; i < $numberOfScreens.length; i++) {
+    const screenNumber = i + 2; // First screen is #screen-2
+    let fadeInSlideInText = new TweenMax.to(`#screen-${screenNumber} .l-container`, 1.5, {
+        transform: 'translate(200px, 0)',
+        opacity: '1'
+    });
+
+    new ScrollMagic.Scene({
+        triggerElement: `#screen-${screenNumber}`,
+        reverse: false
+    })
+    .setTween(fadeInSlideInText)
+    .addTo(controller);
+}
+
+//
+// PHONE ANIMATION
+//
 let fadeInSlideIn = new TweenMax.to('#phone', 1.5, {
+    delay: 0.2,
     transform: 'translate(-200px, 0)',
     opacity: '1'
 });
 
 new ScrollMagic.Scene({
-    triggerElement: "#phone",
+    triggerElement: "#screen-2",
     reverse: false
 })
 .setTween(fadeInSlideIn)
 .addTo(controller);
 
+//
+// PHONE PIN
+//
 new ScrollMagic.Scene({
     triggerElement: "#phone-anchor"
 })

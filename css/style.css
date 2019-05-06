@@ -47,10 +47,16 @@ h1 {
     flex-direction: column;
 }
 
+.screen .l-container {
+    position: relative;
+    left: -200px;
+    opacity: 0;
+}
+
 #phone {
     z-index: 99;
-    opacity: 0;
     right: -200px;
+    opacity: 0;
 }
 
 #phone-anchor {
