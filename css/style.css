@@ -47,6 +47,15 @@ h1 {
     flex-direction: column;
 }
 
+.svg-test {
+    height: 100%;
+    width: 100%;
+}
+
+path {
+  fill: transparent;
+}
+
 .screen .l-container {
     position: relative;
     left: -200px;

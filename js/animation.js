@@ -1,3 +1,18 @@
+const smileString = 'lorem ipsum test text very long hello';
+let truncatedString = '';
+
+let i = 0;
+
+while (i < smileString.length) {
+    truncatedString = smileString.substring(0, i+1);
+    console.log(truncatedString);
+    $('#curveText textPath').text(truncatedString);
+    i = i+1;
+
+    setTimeout(function() {
+    }, 1000);
+}
+
 const controller = new ScrollMagic.Controller();
 
 //
