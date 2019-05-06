@@ -174,7 +174,10 @@ input[type="submit"]:focus {
 .link-chevron {
     position: absolute;
     bottom: 25px;
-    left: calc(45% + 13px);
+}
+
+#screen-2 {
+    padding-bottom: 80px;
 }
 
 #screen-1 .link-chevron {
@@ -184,6 +187,14 @@ input[type="submit"]:focus {
 .empower {
     width: 50%;
     height: auto;
+}
+
+.phone-small-bp {
+    width: 200px;
+    margin: 0 auto;
+}
+.phone-small-bp img {
+    width: 100%;
 }
 
 @media (min-width: 900px) {
@@ -220,6 +231,14 @@ input[type="submit"]:focus {
         text-align: left;
     }
 
+    .link-chevron {
+        left: 50%;
+    }
+
+    .show-mobile {
+        display: none;
+    }
+
     input[type="email"] {
         width: 90%;
     }
@@ -230,6 +249,7 @@ input[type="submit"]:focus {
 
     #screen-2 {
         background: #d7f0fc;
+        padding-bottom: 0;
     }
 
     #screen-3 {
